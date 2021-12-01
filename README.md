@@ -1,0 +1,1 @@
+# macos-hdr-togglerScript

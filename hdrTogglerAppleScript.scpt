@@ -3,7 +3,14 @@ tell application "System Preferences"
         set the current pane to pane id "com.apple.preference.displays"
         tell application "System Events"
             tell process "System Preferences"
- 
+                activate
+                delay 4
+                tell window "Displays"
+                    activate
+                end tell
+
+            click button 1 of window "Displays"
+            delay 2
  
                 click checkbox "High Dynamic Range, Automatically adjust the display to show high dynamic range content." of sheet 1 of window 1
                 click button "Done" of sheet 1 of window "Displays" of application process "System Preferences" of application "System Events"
